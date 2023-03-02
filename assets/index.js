@@ -37,8 +37,10 @@ import left from './left.png';
 import headerbg from './headerbg.png';
 import loader from './loader.gif';
 import arrow from './arrow.png';
+import logoAgora from './logo_agora.png';
 
 export default {
+  logoAgora,
   heartOutline,
   heart,
   logo,

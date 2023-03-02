@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes'; // for light/dark mode
 import Image from 'next/image'; // Next JS improved Image tag
 import Link from 'next/link'; // Next JS <a/> substitution
 import images from '../assets';
+// eslint-disable-next-line import/no-cycle
 import { Button } from '.';
 
 const MenuItems = ({ isMobile, active, setActive }) => {
@@ -67,7 +68,7 @@ const NavBar = () => {
       <div className="flex flex-1 flex-row justify-start">
         <Link href="/">
           <div className="flexCenter md:hidden cursor-pointer" onClick={() => {}}>
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+            <Image src={images.logoAgora} objectFit="contain" width={36} height={36} alt="logo" />
             <p className="dark:text-white text-nft-black-1 font-semibold text-lg ml-1">CryptoAgora</p>
           </div>
         </Link>

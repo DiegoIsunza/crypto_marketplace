@@ -10,7 +10,9 @@ const MyApp = ({ Component, pageProps }) => (
     min-h-screen"
     >
       <NavBar />
-      <Component {...pageProps} />
+      <div className="pt-65">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
     <Script src="https://kit.fontawesome.com/e6c7b68c60.js" crossorigin="anonymous" />
