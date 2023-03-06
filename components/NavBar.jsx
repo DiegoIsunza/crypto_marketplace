@@ -40,7 +40,7 @@ const ButtonGroup = ({ setActive, router }) => {
   return hasConnected ? (
     <Button
       btnName="Create"
-      classStyles="mx-2 rounded-xl"
+      classStyles="mx-2 rounded-xl hover:bg-sky-700"
       handleClick={() => {
         setActive(''); // we want to disable the menu highlight due to we are creating an NFT
         router.push('/create-nft');
@@ -49,7 +49,7 @@ const ButtonGroup = ({ setActive, router }) => {
   ) : (
     <Button
       btnName="Connect"
-      classStyles="mx-2 rounded-xl"
+      classStyles="mx-2 rounded-xl hover:bg-sky-700"
       handleClick={() => {
         // eth wallet
       }}
@@ -74,7 +74,7 @@ const NavBar = () => {
         </Link>
         <Link href="/">
           <div className="hidden md:flex" onClick={() => {}}>
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+            <Image src={images.logoAgora} objectFit="contain" width={32} height={32} alt="logo" />
           </div>
         </Link>
       </div>
